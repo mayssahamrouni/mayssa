@@ -102,17 +102,8 @@ const html = `
 <td><input type="text" id="password" name="password" size="25" style="font-size: 20px"></td>
 </tr>
 
-<tr>
-  <td>
- 
-<input type="file" name="fichier" >
-  </td>
 
-</tr>
-<tr>
-<td><input type ="submit" name="valider" style="background: #E3CEF6" ></td>
-<td><input type ="reset" name="reset"  style="background:#E3CEF6"></td>
-</tr>
+
 </form>
 </table>
 </fieldset>
