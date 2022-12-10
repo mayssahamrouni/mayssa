@@ -11,7 +11,7 @@ const html = `
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello from Render!</title>
+    <title>FORMULAIRE</title>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script>
       setTimeout(() => {
@@ -23,37 +23,102 @@ const html = `
         });
       }, 500);
     </script>
-    <style>
-      @import url("https://p.typekit.net/p.css?s=1&k=vnd5zic&ht=tk&f=39475.39476.39477.39478.39479.39480.39481.39482&a=18673890&app=typekit&e=css");
-      @font-face {
-        font-family: "neo-sans";
-        src: url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/00ac0a/00000000000000003b9b2033/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
-        font-style: normal;
-        font-weight: 700;
+
+   <style>
+      table {
+        border-style: inset;
+        border-width: 9px;
       }
-      html {
-        font-family: neo-sans;
-        font-weight: 700;
-        font-size: calc(62rem / 16);
+      th {
+       border-width: 9px ;
       }
-      body {
-        background: white;
+      td {
+       border-width: 9px  ;
+       color:#585858;
       }
-      section {
-        border-radius: 1em;
-        padding: 1em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-      }
+      input{
+        font-size: 20px; 
+        color:#585858;
+
+            }
+    legend{
+
+        color:#003366;
+    }
     </style>
   </head>
   <body>
     <section>
-      Hello from Render!
+      Welcome to my world 
     </section>
+    <div class="form">
+
+		<fieldset>
+    <legend style="font-size: 25px" align="center">AJOUT ETUDIANT</legend>
+<form>
+
+<table align = "center" bgcolor="#E2A9F3" width="1200"  style="font-size: 25px">
+	
+<tr>
+		<td  >
+			<label for="matricule" bordor ="20"  >Matricule : </label>
+		</td>
+        <br>
+		<td >
+    	 <input type="text" name="matricule" id="matricule" size="25" style="font-size: 20px" >
+    	</td>
+</tr>
+<br>
+<tr>
+
+    	<td><label for="nom">Nom : </label></td>
+    	<td><input type="text" name="nom" id="nom" size="25" style="font-size: 20px"></td>
+</tr>
+
+<tr>
+    	
+    	<td><label for="prenom">Prenom : </label></td>
+    	<td><input type="text" name="prenom" id="prenom" size="25" style="font-size: 20px"></td>
+</tr>
+
+<tr>
+    	<td><label for="adresse">Adresse : </label></td>
+    	<td><input type="textarea" name="adresse" id="adresse" size="25" style="font-size: 20px"></td>
+</tr>
+    
+    
+    	<tr>
+    		<td><label for="naissance">Naissance:</label></td>
+<td><input type="date" id="naissance" name="naissance" size="25" style="font-size: 20px"></td>
+</tr>
+
+<tr>
+<td><label for="email">Email:</label></td>
+<td><input type="email" id="email" name="email" size="25" style="font-size: 20px"></td>
+</tr>
+
+<tr>
+<td><label for="password">Password:</label></td>
+<td><input type="text" id="password" name="password" size="25" style="font-size: 20px"></td>
+</tr>
+
+<tr>
+  <td>
+ 
+<input type="file" name="fichier" >
+  </td>
+
+</tr>
+<tr>
+<td><input type ="submit" name="valider" style="background: #E3CEF6" ></td>
+<td><input type ="reset" name="reset"  style="background:#E3CEF6"></td>
+</tr>
+</form>
+</table>
+</fieldset>
+    
+	</div>
+    
   </body>
 </html>
 `
